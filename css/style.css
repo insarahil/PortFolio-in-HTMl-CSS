@@ -1,0 +1,383 @@
+/*Rest css Start */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+html,
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+textarea {
+  resize: none;
+}
+/* Rest css End */
+
+/* Header Start */
+
+header {
+  background: rgb(69, 33, 78);
+  padding: 15px 80px;
+  /* overflow: hidden; */
+  position: relative;
+}
+header:before,
+header:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+header .logo {
+  max-width: 230px;
+  float: left;
+}
+.menubar {
+  float: right;
+  padding-top: 15px;
+}
+.menubar .nav li {
+  display: inline-block;
+  position: relative;
+}
+
+.menubar .nav li a {
+  padding: 5px 15px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.menubar .nav li a:hover {
+  background-color: red;
+  transition: 2s;
+  border-radius: 10px;
+}
+.menubar .nav .sub_menu {
+  background-color: #fff;
+  padding: 10px 0;
+  display: none;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+}
+.menubar .nav .sub_menu li {
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+.menubar .nav li:hover .sub_menu {
+  display: block;
+}
+.menubar .nav .sub_menu li a {
+  color: black;
+}
+
+/* Header End */
+
+/* Banner Start*/
+.banner {
+  position: relative;
+}
+.webTitle {
+  font-size: 40px;
+  color: rgb(45, 8, 54);
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-10%, -10%);
+  z-index: 1;
+  text-shadow: 2px 6px 6px;
+}
+.webQuote {
+  width: 400px;
+  color: rgb(15, 15, 15);
+  text-align: justify;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 18%;
+  transform: translate(-40%, -18%);
+  z-index: 1;
+}
+
+.banner:after {
+  position: absolute;
+  content: "";
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Banner End */
+
+/* About Us Start */
+.about_us {
+  padding: 15px 100px;
+}
+.about_us .person_image {
+  float: left;
+  width: 30%;
+}
+.about_us .person_image img {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.about_us .information {
+  padding-left: 45px;
+  width: 70%;
+  box-sizing: border-box;
+  float: right;
+  text-align: justify;
+}
+.information .person_name {
+  font-size: 40px;
+  font-weight: 700;
+  border-bottom: 1px solid rgb(45, 8, 54);
+}
+.information .person_name span {
+  display: inline-block;
+  background: rgb(45, 8, 54);
+  color: #ddd;
+  padding: 0 25px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* About Us End */
+/* Portfolio Start */
+.portfolio {
+  padding: 20px 100px;
+  overflow: hidden;
+  background: #f5f5f5;
+  clear: both;
+}
+.section_title {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+.section_title:after {
+  content: "";
+  width: 100px;
+  /* height: 2px;
+  background: red; */
+
+  border-bottom: 4px dotted red;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.portfolio_item {
+  width: 33.33%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.portfolio_item img {
+  border: 2px solid rgb(45, 8, 54);
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 3px 6px 10px black;
+}
+
+.portfolio_item img:hover {
+  transition: transform 1s ease;
+  transform: scale(1.5);
+}
+/* Portfolio End */
+
+/* Contact Start */
+
+.contact_us {
+  padding: 20px 100px;
+  overflow: hidden;
+}
+form.contact_me {
+  width: 500px;
+  margin: 0 auto;
+}
+form.contact_me label {
+  display: block;
+  font-weight: 700;
+}
+form.contact_me input,
+form.contact_me textarea {
+  width: 100%;
+  line-height: 1.5;
+  padding: 10px 20px;
+  margin: 0 0 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+form.contact_me fieldset {
+  border-radius: 10px;
+  box-shadow: 3px 6px 10px black;
+  border: none;
+}
+form.contact_me fieldset > legend {
+  background: rgb(69, 33, 78);
+  font-size: 25px;
+  color: #fff;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+
+form.contact_me input[type="submit"],
+form.contact_me input[type="reset"] {
+  width: 40%;
+  display: inline;
+  box-sizing: border-box;
+  background: rgb(69, 33, 78);
+  color: #f5f5f5;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+form.contact_me input[type="submit"]:hover,
+form.contact_me input[type="reset"]:hover {
+  background-color: red;
+  cursor: pointer;
+}
+/* Contact end */
+/* fotter start */
+footer {
+  text-align: center;
+  background-color: rgb(45, 8, 54);
+  color: #f5f5f5;
+  font-size: 16px;
+  /* font-weight: 700; */
+  padding: 10px;
+}
+/* Footer End */
+
+/* top */
+.move_to_top {
+  background-color: red;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 2;
+  padding: 2px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  position: fixed;
+  right: 2%;
+  bottom: 0;
+  transform: translate(2% 0);
+}
+/* top */
+
+/* Responsive */
+
+@media screen and (max-width: 1024px) {
+  .webQuote {
+    position: absolute;
+    top: 43%;
+    left: 22%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 15px 50px;
+  }
+  header .logo {
+    max-width: 160px;
+  }
+  header .menybar .nav li a {
+    margin-right: 2px;
+  }
+  .webTitle {
+    font-size: 30px;
+    position: absolute;
+    top: 10%;
+    left: 12%;
+  }
+  .webQuote {
+    font-size: 15px;
+    padding-top: 8px;
+    padding-left: 70px;
+  }
+}
+
+@media screen and (max-width: 421px) {
+  header,
+  header .logo,
+  header .menubar,
+  .portfolio_item,
+  .about_us .person_image,
+  .about_us .information {
+    float: none;
+    width: 100%;
+  }
+  .webTitle {
+    font-size: 20px;
+  }
+  .webQuote {
+    font-size: 10px;
+    margin-left: 50px;
+    width: 80%;
+  }
+  .person_name span {
+    font-size: 12px;
+  }
+  .person_info h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 10px;
+  }
+  .about_us .information {
+    padding-left: 4px;
+  }
+  .section_title {
+    font-size: 30px;
+  }
+  form.contact_me {
+    width: auto;
+  }
+  form.contact_me input[type="submit"],
+  form.contact_me input[type="reset"] {
+    width: 100%;
+  }
+}
